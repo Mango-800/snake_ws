@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+resource/snake_server
+snake_server/__init__.py
+snake_server/slaveModule2.py
+snake_server/slaveModule3.py
+snake_server/snakeServer.py
+snake_server.egg-info/PKG-INFO
+snake_server.egg-info/SOURCES.txt
+snake_server.egg-info/dependency_links.txt
+snake_server.egg-info/entry_points.txt
+snake_server.egg-info/requires.txt
+snake_server.egg-info/top_level.txt
+snake_server.egg-info/zip-safe

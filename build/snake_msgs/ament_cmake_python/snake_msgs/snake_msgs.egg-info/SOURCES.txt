@@ -1,0 +1,8 @@
+setup.py
+snake_msgs/__init__.py
+snake_msgs.egg-info/PKG-INFO
+snake_msgs.egg-info/SOURCES.txt
+snake_msgs.egg-info/dependency_links.txt
+snake_msgs.egg-info/top_level.txt
+snake_msgs/msg/__init__.py
+snake_msgs/msg/_module.py

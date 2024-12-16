@@ -1,0 +1,30 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tatsuki/Snake_ws/build/snake_server",
+        "/home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages",
+        "/home/tatsuki/Snake_ws/install/snake_msgs/local/lib/python3.10/dist-packages",
+        "/home/tatsuki/Snake_ws/build/snake_motors",
+        "/home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/build/motors_processor",
+        "/home/tatsuki/MAN_ws/install/motors_processor/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/build/image_processor",
+        "/home/tatsuki/MAN_ws/install/image_processor/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/install/customs_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tatsuki/Snake_ws/build/snake_server",
+        "/home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages",
+        "/home/tatsuki/Snake_ws/install/snake_msgs/local/lib/python3.10/dist-packages",
+        "/home/tatsuki/Snake_ws/build/snake_motors",
+        "/home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/build/motors_processor",
+        "/home/tatsuki/MAN_ws/install/motors_processor/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/build/image_processor",
+        "/home/tatsuki/MAN_ws/install/image_processor/lib/python3.10/site-packages",
+        "/home/tatsuki/MAN_ws/install/customs_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

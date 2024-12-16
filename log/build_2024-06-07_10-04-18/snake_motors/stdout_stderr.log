@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating snake_motors.egg-info
+writing snake_motors.egg-info/PKG-INFO
+writing dependency_links to snake_motors.egg-info/dependency_links.txt
+writing entry points to snake_motors.egg-info/entry_points.txt
+writing requirements to snake_motors.egg-info/requires.txt
+writing top-level names to snake_motors.egg-info/top_level.txt
+writing manifest file 'snake_motors.egg-info/SOURCES.txt'
+reading manifest file 'snake_motors.egg-info/SOURCES.txt'
+writing manifest file 'snake_motors.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages/snake-motors.egg-link (link to .)
+
+Installed /home/tatsuki/Snake_ws/build/snake_motors
+running symlink_data
+creating /home/tatsuki/Snake_ws/install/snake_motors/share/ament_index
+creating /home/tatsuki/Snake_ws/install/snake_motors/share/ament_index/resource_index
+creating /home/tatsuki/Snake_ws/install/snake_motors/share/ament_index/resource_index/packages
+symbolically linking /home/tatsuki/Snake_ws/build/snake_motors/resource/snake_motors -> /home/tatsuki/Snake_ws/install/snake_motors/share/ament_index/resource_index/packages
+symbolically linking /home/tatsuki/Snake_ws/build/snake_motors/package.xml -> /home/tatsuki/Snake_ws/install/snake_motors/share/snake_motors

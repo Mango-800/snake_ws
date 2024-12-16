@@ -1,0 +1,1 @@
+/home/tatsuki/Snake_ws/build/snake_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

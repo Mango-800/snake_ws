@@ -1,0 +1,5 @@
+[console_scripts]
+server = snake_server.snakeServer:main
+slave_1 = snake_server.slaveModule2:main
+slave_2 = snake_server.slaveMOdule3:main
+

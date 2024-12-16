@@ -1,0 +1,1 @@
+/home/tatsuki/Snake_ws/build/snake_msgs/ament_cmake_environment_hooks/local_setup.sh

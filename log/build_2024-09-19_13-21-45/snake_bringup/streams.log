@@ -1,0 +1,47 @@
+[0.046s] Invoking command in '/home/tatsuki/Snake_ws/build/snake_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake /home/tatsuki/Snake_ws/src/snake_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tatsuki/Snake_ws/install/snake_bringup
+[0.541s] -- The C compiler identification is GNU 11.4.0
+[0.541s] -- The CXX compiler identification is GNU 11.4.0
+[0.541s] -- Detecting C compiler ABI info
+[0.541s] -- Detecting C compiler ABI info - done
+[0.541s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.541s] -- Detecting C compile features
+[0.541s] -- Detecting C compile features - done
+[0.542s] -- Detecting CXX compiler ABI info
+[0.637s] -- Detecting CXX compiler ABI info - done
+[0.655s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.655s] -- Detecting CXX compile features
+[0.656s] -- Detecting CXX compile features - done
+[0.664s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.957s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.075s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.166s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.332s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.333s] -- Added test 'lint_cmake' to check CMake code style
+[1.335s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.338s] -- Added test 'xmllint' to check XML markup files
+[1.342s] -- Configuring done
+[1.347s] -- Generating done
+[1.349s] -- Build files have been written to: /home/tatsuki/Snake_ws/build/snake_bringup
+[1.382s] Invoked command in '/home/tatsuki/Snake_ws/build/snake_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake /home/tatsuki/Snake_ws/src/snake_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tatsuki/Snake_ws/install/snake_bringup
+[1.386s] Invoking command in '/home/tatsuki/Snake_ws/build/snake_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake --build /home/tatsuki/Snake_ws/build/snake_bringup -- -j12 -l12
+[1.460s] Invoked command in '/home/tatsuki/Snake_ws/build/snake_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake --build /home/tatsuki/Snake_ws/build/snake_bringup -- -j12 -l12
+[1.505s] Invoking command in '/home/tatsuki/Snake_ws/build/snake_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake --install /home/tatsuki/Snake_ws/build/snake_bringup
+[1.517s] -- Install configuration: ""
+[1.518s] -- Execute custom install script
+[1.518s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/launch/snake.launch.py
+[1.538s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/ament_index/resource_index/package_run_dependencies/snake_bringup
+[1.553s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/ament_index/resource_index/parent_prefix_path/snake_bringup
+[1.569s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/environment/ament_prefix_path.sh
+[1.586s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/environment/ament_prefix_path.dsv
+[1.602s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/environment/path.sh
+[1.618s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/environment/path.dsv
+[1.636s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/local_setup.bash
+[1.659s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/local_setup.sh
+[1.676s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/local_setup.zsh
+[1.694s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/local_setup.dsv
+[1.715s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/package.dsv
+[1.732s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/ament_index/resource_index/packages/snake_bringup
+[1.750s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/cmake/snake_bringupConfig.cmake
+[1.769s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/cmake/snake_bringupConfig-version.cmake
+[1.787s] -- Symlinking: /home/tatsuki/Snake_ws/install/snake_bringup/share/snake_bringup/package.xml
+[1.810s] Invoked command in '/home/tatsuki/Snake_ws/build/snake_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tatsuki/ROS2Dev/test_ws/install/first_package:/home/tatsuki/Snake_ws/install/snake_server:/home/tatsuki/Snake_ws/install/snake_motors:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble /usr/bin/cmake --install /home/tatsuki/Snake_ws/build/snake_bringup

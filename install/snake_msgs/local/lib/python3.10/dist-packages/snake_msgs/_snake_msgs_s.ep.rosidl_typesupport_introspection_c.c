@@ -1,0 +1,1 @@
+/home/tatsuki/Snake_ws/build/snake_msgs/rosidl_generator_py/snake_msgs/_snake_msgs_s.ep.rosidl_typesupport_introspection_c.c

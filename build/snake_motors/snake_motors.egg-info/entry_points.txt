@@ -1,0 +1,3 @@
+[console_scripts]
+motors = snake_motors.snake_motors_publisher:main
+

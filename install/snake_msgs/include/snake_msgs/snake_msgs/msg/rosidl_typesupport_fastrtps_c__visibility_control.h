@@ -1,0 +1,1 @@
+/home/tatsuki/Snake_ws/build/snake_msgs/rosidl_typesupport_fastrtps_c/snake_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tatsuki/Snake_ws/install/snake_msgs/include/**",
+        "/home/tatsuki/MAN_ws/install/customs_msgs/include/**",
+        "/home/tatsuki/ros2_ws/install/micro_ros_agent/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/tatsuki/Snake_ws/src/snake_msgs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

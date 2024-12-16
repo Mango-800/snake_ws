@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000427] (snake_msgs) JobQueued: {'identifier': 'snake_msgs', 'dependencies': OrderedDict()}
+[0.000622] (snake_server) JobQueued: {'identifier': 'snake_server', 'dependencies': OrderedDict()}
+[0.000646] (snake_msgs) JobStarted: {'identifier': 'snake_msgs'}
+[0.005744] (snake_server) JobStarted: {'identifier': 'snake_server'}
+[0.012377] (snake_msgs) JobProgress: {'identifier': 'snake_msgs', 'progress': 'cmake'}
+[0.012545] (snake_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/tatsuki/Snake_ws/src/snake_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tatsuki/Snake_ws/install/snake_msgs'], 'cwd': '/home/tatsuki/Snake_ws/build/snake_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en_CA:en'), ('USER', 'tatsuki'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tatsuki/MAN_ws/install/customs_msgs/lib:/home/tatsuki/ros2_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tatsuki'), ('OLDPWD', '/home/tatsuki/Snake_ws/src/snake_msgs/msg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('SYSTEMD_EXEC_PID', '1130'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tatsuki/MAN_ws/install:/home/tatsuki/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tatsuki'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tatsuki'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/tatsuki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tatsuki-Laptop:@/tmp/.ICE-unix/1099,unix/tatsuki-Laptop:/tmp/.ICE-unix/1099'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01d57d33_eb58_4bba_91b2_5871e250c41c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YQ73O2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.152'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/home/tatsuki/MAN_ws/install/customs_msgs:/home/tatsuki/ros2_ws/install/micro_ros_agent:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tatsuki/Snake_ws/build/snake_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tatsuki/MAN_ws/build/motors_processor:/home/tatsuki/MAN_ws/install/motors_processor/lib/python3.10/site-packages:/home/tatsuki/MAN_ws/build/image_processor:/home/tatsuki/MAN_ws/install/image_processor/lib/python3.10/site-packages:/home/tatsuki/MAN_ws/install/customs_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tatsuki/MAN_ws/install/customs_msgs:/home/tatsuki/ros2_ws/install/micro_ros_agent:/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/opt/ros/humble')]), 'shell': False}
+[0.099165] (-) TimerEvent: {}
+[0.106256] (snake_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.180954] (snake_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.191287] (snake_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199291] (-) TimerEvent: {}
+[0.280377] (snake_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.295212] (snake_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.295792] (snake_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.296663] (snake_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.299427] (-) TimerEvent: {}
+[0.303199] (snake_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.395806] (snake_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.399526] (-) TimerEvent: {}
+[0.402796] (snake_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.403005] (snake_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.403417] (snake_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.406950] (snake_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499866] (-) TimerEvent: {}
+[0.586670] (snake_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.595678] (snake_server) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/tatsuki/Snake_ws/build/snake_server/build', '--no-deps', 'symlink_data'], 'cwd': '/home/tatsuki/Snake_ws/build/snake_server', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'es:en_CA:en', 'USER': 'tatsuki', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/tatsuki/MAN_ws/install/customs_msgs/lib:/home/tatsuki/ros2_ws/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tatsuki', 'OLDPWD': '/home/tatsuki/Snake_ws/src/snake_msgs/msg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '1130', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/tatsuki/MAN_ws/install:/home/tatsuki/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'tatsuki', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tatsuki', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/tatsuki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tatsuki-Laptop:@/tmp/.ICE-unix/1099,unix/tatsuki-Laptop:/tmp/.ICE-unix/1099', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/01d57d33_eb58_4bba_91b2_5871e250c41c', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YQ73O2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.152', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/tatsuki/MAN_ws/install/motors_processor:/home/tatsuki/MAN_ws/install/image_processor:/home/tatsuki/MAN_ws/install/customs_msgs:/home/tatsuki/ros2_ws/install/micro_ros_agent:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/tatsuki/Snake_ws/build/snake_server', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tatsuki/Snake_ws/build/snake_server/prefix_override:/home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages:/home/tatsuki/MAN_ws/build/motors_processor:/home/tatsuki/MAN_ws/install/motors_processor/lib/python3.10/site-packages:/home/tatsuki/MAN_ws/build/image_processor:/home/tatsuki/MAN_ws/install/image_processor/lib/python3.10/site-packages:/home/tatsuki/MAN_ws/install/customs_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/tatsuki/MAN_ws/install/customs_msgs:/home/tatsuki/ros2_ws/install/micro_ros_agent'}, 'shell': False}
+[0.599939] (-) TimerEvent: {}
+[0.653062] (snake_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.695699] (snake_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.700031] (-) TimerEvent: {}
+[0.749807] (snake_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.756456] (snake_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.766900] (snake_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.783148] (snake_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800474] (-) TimerEvent: {}
+[0.805337] (snake_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.849030] (snake_server) StdoutLine: {'line': b'running develop\n'}
+[0.885507] (snake_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.889115] (snake_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900769] (-) TimerEvent: {}
+[0.990690] (snake_server) StdoutLine: {'line': b'running egg_info\n'}
+[0.990988] (snake_server) StdoutLine: {'line': b'writing snake_server.egg-info/PKG-INFO\n'}
+[0.991167] (snake_server) StdoutLine: {'line': b'writing dependency_links to snake_server.egg-info/dependency_links.txt\n'}
+[0.991344] (snake_server) StdoutLine: {'line': b'writing entry points to snake_server.egg-info/entry_points.txt\n'}
+[0.991479] (snake_server) StdoutLine: {'line': b'writing requirements to snake_server.egg-info/requires.txt\n'}
+[0.991617] (snake_server) StdoutLine: {'line': b'writing top-level names to snake_server.egg-info/top_level.txt\n'}
+[0.992559] (snake_server) StdoutLine: {'line': b"reading manifest file 'snake_server.egg-info/SOURCES.txt'\n"}
+[0.993075] (snake_server) StdoutLine: {'line': b"writing manifest file 'snake_server.egg-info/SOURCES.txt'\n"}
+[0.994210] (snake_server) StdoutLine: {'line': b'running build_ext\n'}
+[0.994427] (snake_server) StdoutLine: {'line': b'Creating /home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages/snake-server.egg-link (link to .)\n'}
+[0.995024] (snake_server) StdoutLine: {'line': b'\n'}
+[0.995207] (snake_server) StdoutLine: {'line': b'Installed /home/tatsuki/Snake_ws/build/snake_server\n'}
+[0.995342] (snake_server) StdoutLine: {'line': b'running symlink_data\n'}
+[1.000899] (-) TimerEvent: {}
+[1.033591] (snake_server) CommandEnded: {'returncode': 0}
+[1.058443] (snake_server) JobEnded: {'identifier': 'snake_server', 'rc': 0}
+[1.060983] (snake_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.101068] (-) TimerEvent: {}
+[1.126461] (snake_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.180813] (snake_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.192620] (snake_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.201187] (-) TimerEvent: {}
+[1.287830] (snake_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.288189] (snake_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301324] (-) TimerEvent: {}
+[1.369407] (snake_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.370314] (snake_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401464] (-) TimerEvent: {}
+[1.502022] (-) TimerEvent: {}
+[1.527556] (snake_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.602141] (-) TimerEvent: {}
+[1.679381] (snake_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[1.679670] (snake_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[1.679803] (snake_msgs) StderrLine: {'line': b'  snake_msgs --arguments-file\n'}
+[1.679924] (snake_msgs) StderrLine: {'line': b'  /home/tatsuki/Snake_ws/build/snake_msgs/rosidl_adapter__arguments__snake_msgs.json\n'}
+[1.680113] (snake_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[1.680234] (snake_msgs) StderrLine: {'line': b'  /home/tatsuki/Snake_ws/build/snake_msgs/rosidl_adapter/snake_msgs\n'}
+[1.680352] (snake_msgs) StderrLine: {'line': b'  --output-file\n'}
+[1.680470] (snake_msgs) StderrLine: {'line': b'  /home/tatsuki/Snake_ws/build/snake_msgs/rosidl_adapter/snake_msgs.idls)\n'}
+[1.680587] (snake_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.680702] (snake_msgs) StderrLine: {'line': b'\n'}
+[1.680817] (snake_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.680934] (snake_msgs) StderrLine: {'line': b'\n'}
+[1.681049] (snake_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[1.681166] (snake_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[1.681282] (snake_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[1.681399] (snake_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[1.681514] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.681630] (snake_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.681746] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.681863] (snake_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.682016] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[1.682137] (snake_msgs) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[1.682252] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[1.682391] (snake_msgs) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[1.682509] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string\n'}
+[1.682625] (snake_msgs) StderrLine: {'line': b'      msg = MessageSpecification(pkg_name, msg_name, fields, constants)\n'}
+[1.682741] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__\n'}
+[1.682859] (snake_msgs) StderrLine: {'line': b'      self.base_type = BaseType(\n'}
+[1.682975] (snake_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__\n'}
+[1.683099] (snake_msgs) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[1.683215] (snake_msgs) StderrLine: {'line': b'\n'}
+[1.683331] (snake_msgs) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'module' is an invalid message\n"}
+[1.683448] (snake_msgs) StderrLine: {'line': b"  name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[1.683564] (snake_msgs) StderrLine: {'line': b'\n'}
+[1.683680] (snake_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.683796] (snake_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.683930] (snake_msgs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[1.684077] (snake_msgs) StderrLine: {'line': b'\n'}
+[1.684194] (snake_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.684311] (snake_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.684437] (snake_msgs) StdoutLine: {'line': b'See also "/home/tatsuki/Snake_ws/build/snake_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.698034] (snake_msgs) CommandEnded: {'returncode': 1}
+[1.702256] (-) TimerEvent: {}
+[1.723153] (snake_msgs) JobEnded: {'identifier': 'snake_msgs', 'rc': 1}
+[1.734212] (-) EventReactorShutdown: {}

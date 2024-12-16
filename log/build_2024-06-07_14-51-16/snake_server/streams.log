@@ -1,0 +1,17 @@
+[1.558s] Invoking command in '/home/tatsuki/Snake_ws/build/snake_server': PYTHONPATH=/home/tatsuki/Snake_ws/build/snake_server/prefix_override:/home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tatsuki/Snake_ws/build/snake_server/build --no-deps symlink_data
+[1.965s] running develop
+[2.208s] running egg_info
+[2.209s] writing snake_server.egg-info/PKG-INFO
+[2.209s] writing dependency_links to snake_server.egg-info/dependency_links.txt
+[2.209s] writing entry points to snake_server.egg-info/entry_points.txt
+[2.209s] writing requirements to snake_server.egg-info/requires.txt
+[2.210s] writing top-level names to snake_server.egg-info/top_level.txt
+[2.212s] reading manifest file 'snake_server.egg-info/SOURCES.txt'
+[2.213s] writing manifest file 'snake_server.egg-info/SOURCES.txt'
+[2.215s] running build_ext
+[2.216s] Creating /home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages/snake-server.egg-link (link to .)
+[2.216s] Installing server script to /home/tatsuki/Snake_ws/install/snake_server/lib/snake_server
+[2.217s] 
+[2.217s] Installed /home/tatsuki/Snake_ws/build/snake_server
+[2.217s] running symlink_data
+[2.276s] Invoked command in '/home/tatsuki/Snake_ws/build/snake_server' returned '0': PYTHONPATH=/home/tatsuki/Snake_ws/build/snake_server/prefix_override:/home/tatsuki/Snake_ws/install/snake_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tatsuki/Snake_ws/build/snake_server/build --no-deps symlink_data
