@@ -4,6 +4,7 @@ setup.py
 resource/snake_motors
 snake_motors/__init__.py
 snake_motors/snake_motors_publisher.py
+snake_motors/snake_move_algorithm.py
 snake_motors.egg-info/PKG-INFO
 snake_motors.egg-info/SOURCES.txt
 snake_motors.egg-info/dependency_links.txt

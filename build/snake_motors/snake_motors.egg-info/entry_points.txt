@@ -1,3 +1,4 @@
 [console_scripts]
+algorithm = snake_motors.snake_move_algorithm:main
 motors = snake_motors.snake_motors_publisher:main
 

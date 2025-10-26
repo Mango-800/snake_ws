@@ -2,7 +2,6 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-import time
 
 class SnakeServerNode(Node):
     def __init__(self):
@@ -13,8 +12,6 @@ class SnakeServerNode(Node):
         self.module_master_publisher = self.create_publisher(Twist, "module_master", 10)
 
         self.auxModule = Twist()
-        self.auxModule.angular.z = 0.0
-        self.auxModule.angular.y = 0.0
 
         self.messages_slave_1 = []
         self.messages_slave_2 = []
@@ -23,18 +20,20 @@ class SnakeServerNode(Node):
         self.create_timer(0.1, self.checkMessages)
 
     def moduleCallback(self, module: Twist):
-        self.auxModule.linear.x = module.linear.x
+        self.auxModule = module
         
         if module.linear.y == 0.0:
-            module.linear.z = 0.0
-            self.module_master_publisher.publish(module)
+            self.auxModule.linear.y = 1.0
+            self.module_master_publisher.publish(self.auxModule)
             
-            self.messages_slave_1.append((module, self.get_clock().now().to_msg().sec + self.delays[0]))   
-            self.messages_slave_2.append((module, self.get_clock().now().to_msg().sec + self.delays[1]))   
-            self.messages_slave_3.append((module, self.get_clock().now().to_msg().sec + self.delays[2]))   
+            self.auxModule.linear.y = 2.0
+            self.messages_slave_1.append((self.auxModule, self.get_clock().now().to_msg().sec + self.delays[0]))   
+            self.auxModule.linear.y = 3.0
+            self.messages_slave_2.append((self.auxModule, self.get_clock().now().to_msg().sec + self.delays[1]))   
+            self.auxModule.linear.y = 4.0
+            self.messages_slave_3.append((self.auxModule, self.get_clock().now().to_msg().sec + self.delays[2]))   
             
         else:
-            module.linear.z = module.linear.y - 1.0
             self.module_master_publisher.publish(module)
             self.get_logger().info(f"Module: {module}\n")
 
@@ -42,20 +41,18 @@ class SnakeServerNode(Node):
         current_time = self.get_clock().now().to_msg().sec
         if self.messages_slave_1 and self.messages_slave_1[0][1] <= current_time:
             msg, _ = self.messages_slave_1.pop(0)
-            msg.linear.z = 1.0
-            self.module_master_publisher.publish(msg)
-            self.get_logger().info(f"Module: 2")
-            self.get_logger().info(f"Speed: {int(msg.linear.x)}")
-            self.get_logger().info(f"Yaw: {int(msg.angular.z)}")
-            self.get_logger().info(f"Pitch: {int(msg.angular.y)}\n")
+            publishSlaveMessage()
         if self.messages_slave_2 and self.messages_slave_2[0][1] <= current_time:
             msg, _ = self.messages_slave_2.pop(0)
-            msg.linear.z = 2.0
+            publishSlaveMessage()
+
+        def publishSlaveMessage():
             self.module_master_publisher.publish(msg)
-            self.get_logger().info(f"Module: 3")
+            self.get_logger().info(f"Module: {int(msg.linear.y)}")
             self.get_logger().info(f"Speed: {int(msg.linear.x)}")
             self.get_logger().info(f"Yaw: {int(msg.angular.z)}")
             self.get_logger().info(f"Pitch: {int(msg.angular.y)}\n")
+
 
 def main(args=None):
     rclpy.init(args=args)

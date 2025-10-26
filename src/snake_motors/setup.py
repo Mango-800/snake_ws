@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "motors = snake_motors.snake_motors_publisher:main"
+            "motors = snake_motors.snake_motors_publisher:main",
+            "algorithm = snake_motors.snake_move_algorithm:main"
         ],
     },
 )

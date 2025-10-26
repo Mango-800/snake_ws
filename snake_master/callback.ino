@@ -2,12 +2,11 @@ void module_callback(const void * msgin) {
   const geometry_msgs__msg__Twist * msg = (const geometry_msgs__msg__Twist *)msgin;
     
   module_value = msg->linear.y;
-  slave_value = msg->linear.z;
   speed_value = msg->linear.x;
   yaw_value = msg->angular.z;
   pitch_value = msg->angular.y;
 
-  if ((module_value != 1.0) && (slave_value != 0.0)) {
+  if (module_value != 1.0){
     sendI2C();
   }
   else {
