@@ -128,42 +128,33 @@ class SnakePublisherNode(Node):
     def module0(self, event):
         if self.module != 0.0:
             self.module = 0.0
-            self.label_speed.config(text=f"Speed: {self.currentSpeed}")
-            self.label_module.config(text=f"Module: {int(self.module)}")
-            self.speed = 0.0
-            self.yaw = 0.0
-            self.pitch = 0.0
+            
             self.publishModule()
 
     def module1(self, event):
         if self.module != 1.0:
             self.module = 1.0
-            self.label_speed.config(text=f"Speed: {self.currentSpeed}")
-            self.label_module.config(text=f"Module: {int(self.module)}")
-            self.speed = 0.0
-            self.yaw = 0.0
-            self.pitch = 0.0
+            self.configModule()
             self.publishModule()
 
     def module2(self, event):
         if self.module != 2.0:
             self.module = 2.0
-            self.label_speed.config(text=f"Speed: {self.currentSpeed}")
-            self.label_module.config(text=f"Module: {int(self.module)}")
-            self.speed = 0.0
-            self.yaw = 0.0
-            self.pitch = 0.0
+            self.configModule()
             self.publishModule()
 
     def module3(self, event):
         if self.module != 3.0:
             self.module = 3.0
-            self.label_speed.config(text=f"Speed: {self.currentSpeed}")
-            self.label_module.config(text=f"Module: {int(self.module)}")
-            self.speed = 0.0
-            self.yaw = 0.0
-            self.pitch = 0.0
+            self.configModule()
             self.publishModule()
+
+    def configModule(self):
+        self.label_speed.config(text=f"Speed: {self.currentSpeed}")
+        self.label_module.config(text=f"Module: {int(self.module)}")
+        self.speed = 0.0
+        self.yaw = 0.0
+        self.pitch = 0.0
 
     def publishModule(self):
         if (self.speed != self.prevSpeed) or (self.yaw != self.prevYaw) or (self.pitch != self.prevPitch) or (self.module != self.prevModule):
