@@ -128,7 +128,7 @@ class SnakePublisherNode(Node):
     def module0(self, event):
         if self.module != 0.0:
             self.module = 0.0
-            
+            self.configModule()
             self.publishModule()
 
     def module1(self, event):

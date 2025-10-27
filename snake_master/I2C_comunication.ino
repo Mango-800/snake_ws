@@ -1,19 +1,19 @@
 void sendI2C(){
   byte byteReturn;
   
-  Wire.beginTransmission(static_cast<int>(slave_value));  
+  Wire.beginTransmission(static_cast<int>(module_value));  
   Wire.write((uint8_t*)&speed_value, sizeof(speed_value));
-  Wire.write((uint8_t*)&yaw_value, sizeof(yaw_value));
-  Wire.write((uint8_t*)&pitch_value, sizeof(pitch_value));
+  Wire.write((uint8_t*)&module_yaw[(int)module_value-1], sizeof(module_yaw[(int)module_value-1]));
+  Wire.write((uint8_t*)&module_pitch[(int)module_value-1], sizeof(module_pitch[(int)module_value-1]));
   byteReturn = Wire.endTransmission();
 
   if (byteReturn == 0){
     Serial.print("Valores enviados a 0x");
-    Serial.println(static_cast<int>(slave_value), HEX);
+    Serial.println(static_cast<int>(module_value), HEX);
   }
   else {
     Serial.print("Error al enviar a 0x");
-    Serial.println(static_cast<int>(slave_value), HEX);
+    Serial.println(static_cast<int>(module_value), HEX);
   }
 }
 

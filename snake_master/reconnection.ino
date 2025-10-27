@@ -13,6 +13,13 @@ bool create_entities()
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
     "std_msgs_msg_Int32"));
 
+  // create serial publisher
+  RCCHECK(rclc_publisher_init_best_effort(
+    &serial_publisher,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
+    "serial_msg"));
+
   // Crear el suscriptor
     RCCHECK(rclc_subscription_init_default(
         &module_subscriber,
@@ -35,6 +42,7 @@ bool create_entities()
   RCCHECK(rclc_executor_add_subscription(&executor, &module_subscriber, &module_msg, &module_callback, ON_NEW_DATA));
 
   Serial.println("Conexión Micro-ROS establecida correctamente.");
+  digitalWrite(LED_PIN, 1);
   return true;
 }
 
@@ -56,6 +64,8 @@ void verify_agent()
   switch (state) {
     case WAITING_AGENT:
       EXECUTE_EVERY_N_MS(500, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_AVAILABLE : WAITING_AGENT;);
+      //Serial.println("WAITING AGENT");
+      digitalWrite(LED_PIN, 0);
       break;
     case AGENT_AVAILABLE:
       state = (true == create_entities()) ? AGENT_CONNECTED : WAITING_AGENT;
@@ -64,22 +74,18 @@ void verify_agent()
       };
       break;
     case AGENT_CONNECTED:
-      EXECUTE_EVERY_N_MS(200, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_CONNECTED : AGENT_DISCONNECTED;);
+      EXECUTE_EVERY_N_MS(500, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_CONNECTED : AGENT_DISCONNECTED;);
       if (state == AGENT_CONNECTED) {
         rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));
+        //Serial.println("AGENT CONNECTED");
       }
       break;
     case AGENT_DISCONNECTED:
       destroy_entities();
+      Serial.println("AGENT DISCONNECTED");
       state = WAITING_AGENT;
       break;
     default:
       break;
-  }
-
-  if (state == AGENT_CONNECTED) {
-    digitalWrite(LED_PIN, 1);
-  } else {
-    digitalWrite(LED_PIN, 0);
   }
 }

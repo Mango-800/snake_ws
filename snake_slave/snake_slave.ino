@@ -37,11 +37,11 @@ const uint8_t SAMPLE_TIME = 10;
 double desired_pitch_angle = 0.0;
 double desired_yaw_angle = 0.0;
 
-const int slaveAddress = 1;  // Cambiar dependiendo del esclavo
+const int moduleAddress = 2;  // Cambiar dependiendo del esclavo
 double speed_value, yaw_value, pitch_value;
 
 void setup() {
-  Wire.begin(slaveAddress);  // Inicia el esclavo en la dirección especificada
+  Wire.begin(moduleAddress);  // Inicia el esclavo en la dirección especificada
   Wire.onReceive(receiveEvent);  // Registra el evento de recepción
   Serial.begin(9600);
 

@@ -1,0 +1,18 @@
+[1.189s] Invoking command in '/home/tatsuki/Snake_ws/build/snake_motors': PYTHONPATH=/home/tatsuki/Snake_ws/build/snake_motors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tatsuki/Snake_ws/build/snake_motors/build --no-deps symlink_data
+[1.533s] running develop
+[1.782s] running egg_info
+[1.782s] writing snake_motors.egg-info/PKG-INFO
+[1.782s] writing dependency_links to snake_motors.egg-info/dependency_links.txt
+[1.783s] writing entry points to snake_motors.egg-info/entry_points.txt
+[1.783s] writing requirements to snake_motors.egg-info/requires.txt
+[1.783s] writing top-level names to snake_motors.egg-info/top_level.txt
+[1.785s] reading manifest file 'snake_motors.egg-info/SOURCES.txt'
+[1.786s] writing manifest file 'snake_motors.egg-info/SOURCES.txt'
+[1.788s] running build_ext
+[1.788s] Creating /home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages/snake-motors.egg-link (link to .)
+[1.789s] Installing algorithm script to /home/tatsuki/Snake_ws/install/snake_motors/lib/snake_motors
+[1.789s] Installing motors script to /home/tatsuki/Snake_ws/install/snake_motors/lib/snake_motors
+[1.789s] 
+[1.789s] Installed /home/tatsuki/Snake_ws/build/snake_motors
+[1.790s] running symlink_data
+[1.862s] Invoked command in '/home/tatsuki/Snake_ws/build/snake_motors' returned '0': PYTHONPATH=/home/tatsuki/Snake_ws/build/snake_motors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tatsuki/Snake_ws/install/snake_motors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tatsuki/Snake_ws/build/snake_motors/build --no-deps symlink_data

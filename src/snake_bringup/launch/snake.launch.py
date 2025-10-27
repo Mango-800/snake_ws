@@ -11,8 +11,14 @@ def generate_launch_description():
     motors_node = Node(package = "snake_motors", executable = "motors")
     server_node = Node(package = "snake_server", executable = "server")
     # Se agrega el comando para ejecutar el agente Micro-ROS
+    #Para comunicaciòn Wifi
+    #micro_ros_agent = ExecuteProcess(
+    #    cmd=["ros2", "run", "micro_ros_agent", "micro_ros_agent", "udp6", "--port", "8001"],
+    #    output="screen",
+    #)
+    #Para comunicaciòn serial
     micro_ros_agent = ExecuteProcess(
-        cmd=["ros2", "run", "micro_ros_agent", "micro_ros_agent", "udp6", "--port", "8001"],
+        cmd=["ros2", "run", "micro_ros_agent", "micro_ros_agent", "serial", "--dev", "/dev/ttyUSB0"],
         output="screen",
     )
     #Los nodos se agregan al launcher

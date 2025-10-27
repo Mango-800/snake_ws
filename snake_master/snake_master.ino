@@ -37,6 +37,9 @@ rcl_publisher_t publisher;
 std_msgs__msg__Int32 msg;
 bool micro_ros_init_successful;
 
+rcl_publisher_t serial_publisher;
+geometry_msgs__msg__Twist serial_msg;
+
 char * ssid     = "INFINITUMA888";
 char * password = "hNxNF6kX7P";
 char * pc_ip = "192.168.1.255";
@@ -85,7 +88,10 @@ const uint8_t SAMPLE_TIME = 10;
 double desired_pitch_angle = 0.0;
 double desired_yaw_angle = 0.0;
 
-double speed_value, yaw_value, pitch_value, module_value, slave_value;
+double speed_value = 0.0, yaw_value = 0.0, pitch_value = 0.0, module_value;
+const int modules_number = 7;
+double module_yaw[modules_number];
+double module_pitch[modules_number];
 
 #define LED_PIN 32
 int ledPins[2] = {5, 15};
@@ -102,7 +108,11 @@ enum states {
 } state;
 
 void setup() {
-  set_microros_wifi_transports(ssid, password, pc_ip, port);
+  // to Wifi communication
+  //set_microros_wifi_transports(ssid, password, pc_ip, port);
+
+  // to Serial communication
+  set_microros_transports();
 
   Serial.begin(9600);
   Serial.println("");
@@ -111,6 +121,11 @@ void setup() {
 
   pinMode(LED_PIN, OUTPUT);
   for(int i=0; i<2; i++)    pinMode(ledPins[i], OUTPUT);
+
+  for (int i=0; i<modules_number; i++) {
+    module_yaw[i] = 0.0;
+    module_pitch[i] = 0.0;
+  }
   
   Wire.begin();  // Inicia el maestro
 
@@ -173,8 +188,15 @@ void setup() {
 
   state = WAITING_AGENT;
   msg.data = 0;
+
+  // to Serial communication
+  create_entities();
 }
 
 void loop() {
-  verify_agent();
+  // to Wifi communication
+  //verify_agent();
+
+  // to Serial communication
+  rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));
 }
